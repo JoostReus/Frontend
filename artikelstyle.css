@@ -1,0 +1,156 @@
+* {
+	box-sizing: border-box;
+	font-family: helvetica;
+}
+
+html {
+	background-color: #EAEAEA;
+}
+
+body > header {
+	color: white;
+	border: 4px solid black;
+	padding: .5em;
+	margin: .1em;
+	background-color: #3D3D3E;
+	text-align: center;
+	border-radius: 20px;
+}
+
+header > img {
+	width: 400px
+}
+
+nav > ul > li {
+	display: inline-block;
+	border: 4px solid blue;
+	padding: .5em;
+	margin: .1em;
+	background-color: #CECECE;
+	-webkit-transition: background-color 2s, -webkit-transform 2s;
+    transition: background-color 2s, transform 2s;
+}
+
+nav > ul > li:hover {
+    background-color: ##9675E1;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+body > section {
+	display: flex;
+	justify-content: center;
+}
+
+body > section > article {
+	color: #E18527;
+	width: 100%;
+	/*display: inline-block;
+	float: left;*/
+	border: 2px solid black;
+	padding: .5em;
+	margin: .1em;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px #888;
+}
+
+body > main > article {
+	margin: 0 20em 0 20em;
+}
+
+aside {
+	clear: both;
+}
+
+aside > section {
+	color: #9675E1;
+	float: left;
+	width: 17.5em;
+	border: 2px solid black;
+	margin: .1em;
+	padding: .5em;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px #888;
+}
+
+footer {
+	clear: both;
+}
+
+
+footer > section {
+	float: left;
+	width: 17.5em;
+	border: 2px solid black;
+	padding: .5em;
+	margin: .1em;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 10px 10px 5px #888;
+}
+
+@media screen and (max-width: 1650px) {
+	
+	/*body > section {
+	margin-left: 0em;
+	}*/
+	
+}
+
+
+@media screen and (max-width: 1500px) {
+
+	body > main > article {
+	margin: 0 5em 0 5em;
+	}
+
+}
+
+@media screen and (max-width: 1150px) {
+
+	body > section {
+		display: block;
+	}
+
+	body > section > article {
+	display: block;
+	float: none;
+	width: 100%;
+	}
+
+	aside > section {
+	display: block;
+	float: none;
+	width: 100%;
+	}
+
+	footer > section {
+	display: block;
+	float: none;
+	width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 750px) {
+	
+	body > main > article {
+	margin: 0 1em 0 1em;
+	}
+
+	nav > ul > li {
+		display: block;
+	}
+
+	header > img  {
+		width: 70%;
+	}
+
+	section > img {
+		width: 100%;
+	}
+
+}
+	
