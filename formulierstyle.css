@@ -15,16 +15,12 @@ body > header {
 	background-color: #3D3D3E;
 	text-align: center;
 	border-radius: 20px;
+	font-size: 1.2rem;
 }
 
-header > img {
+header img {
 	width: 400px
 }
-
-header > a, a:hover, a:visited {
-	color: white;
-}
-
 
 nav > ul > li {
 	display: inline-block;
@@ -44,20 +40,24 @@ nav > ul > li:hover {
 
 body > section {
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
 }
 
 body > section > article {
+	font-size: 1.1rem;
 	color: #E18527;
-	width: 17.5em;
-	display: inline-block;
-	float: left;
+	width: 33%;
 	border: 2px solid black;
 	padding: .5em;
 	margin: .1em;
 	background-color: white;
 	border-radius: 20px;
 	box-shadow: 10px 10px 5px #888;
+}
+
+body > section > h2 {
+	flex-basis: 100%;
+	flex-wrap: wrap;
 }
 
 body > main > form {
@@ -101,7 +101,7 @@ aside {
 aside > section {
 	color: #9675E1;
 	float: left;
-	width: 17.5em;
+	width: 49.5%;
 	border: 2px solid black;
 	margin: .1em;
 	padding: .5em;
@@ -112,8 +112,15 @@ aside > section {
 
 footer {
 	clear: both;
+	display: flex;
 }
 
+
+
+a[href="#"] {
+	font-family: Verdana, sans-serif;
+	color: green;
+}
 
 footer > section {
 	float: left;
